@@ -1,68 +1,47 @@
-# HogWild: The React app for fans of prize-winning pigs
+# Hog Wild React App
 
-## React Week 1 Project
+## Project Overview
 
-## Deliverables
+Hog Wild is a React web application that allows users to explore information about different hogs. Users can view hog tiles, filter hogs based on various criteria, sort them by name or weight, and enjoy additional features like hiding hogs and adding new ones.
+![App Screenshot](./src/assets/app.png)
 
-- _When the app first loads_, display a tile for each hog in the
-  `porker_data.js` file. In the tile, display the **name** and **image** for
-  each hog.
-- _When the user clicks on the hog tile_, display the other details about the
-  hog (its **specialty**, **weight**, **greased**, and **highest medal
-  achieved**)
-- Allow the user to _filter_ the hogs that are **greased**
-- Allow the user to _sort_ the hogs based on **name** or **weight**
+## Installation
 
-- BONUS: Allow users to _hide_ hogs (not delete them, just hide them from view!)
-- BONUS: Add a form to allow users to _add_ new hogs to the page
-- BONUS: Implement [Semantic Cards](https://semantic-ui.com/views/card.html) for
-  each hog
+1. Clone the repository: `git clone https://github.com/saonara/react-hooks-hogwild.git`
+2. Navigate to the project directory: `cd react-hooks-hogwild`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-## Project Guidelines
+## Usage
 
-- Follow
-  [React best practices](https://reactjs.org/docs/thinking-in-react.html) to
-  create components and decide where state needs to live
-- Pass props down from parent components to children
-- Use inverse data flow and callback functions to pass data up from child
-  components to parents
-- Re-render components by setting state
+1. Upon loading the app, hog tiles are displayed, showing the name and image of each hog.
+2. Click on a hog tile to view additional details such as specialty, weight, greased status, and highest medal achieved.
+3. Use the filter option to display only greased hogs.
+4. Sort hogs by name or weight using the sorting feature.
+5. Bonus features include the ability to hide hogs and add new hogs using a form.
+6. Enjoy exploring the world of hogs!
 
-## What we have so far
+## Implementation Details
 
-- A file containing all our hog data (`./src/porkers_data.js`) imported into `App.js`
-- A `<Nav>` component rendered in our `App.js`
+- Built with React, utilizing hooks for state management and functional components.
+- Followed React best practices for component structure, state management, and data flow.
+- Implemented filtering and sorting functionalities using state and callback functions.
 
-## Trying to figure out where to start?
+## Additional Features
 
-There are lots of ways to build this project, and while some ways are better
-than others, there is no 'right' way! Start by wireframing what you want the app
-to look like and breaking it up into components.
+- Added the ability to hide hogs from view without deleting them.
+- Implemented a form for users to add new hogs to the page.
+- Utilized Semantic Cards for enhanced visual presentation of hog details.
 
-One good model to follow for this is [Thinking in React](https://reactwithhooks.netlify.app/docs/thinking-in-react.html).
+## Credits
 
-Once you've decided on your components, use the MVP (minimum viable product)
-approach. What's the simplest thing we can render to the page? Perhaps a
-paragraph tag displaying each hog's name? Which components would this involve?
+- Semantic UI React library: https://react.semantic-ui.com/
+- Hog data provided by Learn.co curriculum.
 
-When building your filter and sort functionalities, consider what you want to
-store in state and where that state should be stored. How can a child component
-pass information up to its parent component? Think about what needs to happen
-upon each index rerender. What if a user filters out un-greased pigs, and then
-wants the remaining pigs sorted by weight?
+## Contributing
 
-Be sure to use good programming practices, such as clear variable names and
-single responsibility functions. React apps can quickly become tangled and hard
-to debug if built without best practices!
+Feel free to submit issues, suggest improvements, or contribute to the project via pull requests.
 
-## Styling
+## License
 
-We've imported the Semantic CSS library to keep your piggies looking pretty. To
-keep your hogs in columns, make sure their parent container has the class
-`"ui grid container"`. The children in the columns should have class
-`"ui eight wide column"`. (Semantic uses a grid with a default of 16 units wide,
-so 8-wide will make two columns and 4-wide will make 4 columns.)
-
-Semantic will take care of assigning the columns for you. You can also try
-implementing [Semantic Cards](https://semantic-ui.com/views/card.html) for each
-hog.
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
